@@ -1,0 +1,15 @@
+spring:
+  redis:
+    host: 10.0.5.12
+    password: redis
+  #??? datasource
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521:NJWB22082
+    username: advance
+    password: advance
+    type: com.alibaba.druid.pool.DruidDataSource
+#mybatis  ?? ????
+mybatis:
+  type-aliases-package: com.njwb.ssm.pojo
+  mapper-locations: classpath:mybatis/*.xml
